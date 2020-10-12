@@ -6,7 +6,6 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <script src='https://meet.jit.si/external_api.js'></script>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

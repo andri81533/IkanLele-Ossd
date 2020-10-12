@@ -2,7 +2,6 @@
 
 // import Jutsu, { useJitsi } from 'react-jutsu';
 // import logo from './logo.svg';
-// import './App.css';
 // import JutsuApp from './JutsuApp';
 // import VideoConference from './VideoConference';
 
@@ -29,6 +28,7 @@
 import React, { useState } from 'react'
 
 import { Jutsu } from 'react-jutsu'
+import './App.css';
 
 const App = () => {
   const [room, setRoom] = useState('')
@@ -43,8 +43,8 @@ const App = () => {
 
   return (
     <div>
-      <h2>&lt;Jutsu /&gt; Demo !</h2>
-      <blockquote>View the <a href='https://github.com/this-fifo/jutsu'>source</a> for Jutsu and check <a href='https://github.com/jitsi/jitsi-meet/blob/master/doc/api.md'>jitsi-meet</a> for the Jitsi Meet API</blockquote>
+      <h2>&lt;LeleNoJutsu /&gt; Conference</h2>
+      {/* <blockquote>View the <a href='https://github.com/this-fifo/jutsu'>source</a> for Jutsu and check <a href='https://github.com/jitsi/jitsi-meet/blob/master/doc/api.md'>jitsi-meet</a> for the Jitsi Meet API</blockquote> */}
       {call ? (<Jutsu
         roomName={room}
         password={password}
@@ -61,8 +61,8 @@ const App = () => {
             </button>
           </form>
         )}
-      <p>Made with <span role='img' aria-label='coffee'>☕</span> by <a href='https://github.com/this-fifo'>Filipe Herculano</a></p>
-      <small><i>Note: works only on a desktop browser for now, checkout <a href='https://github.com/jitsi/jitsi-meet/pull/3518'>this PR</a> for more information</i></small>
+      {/* <p>Made with <span role='img' aria-label='coffee'>☕</span> by <a href='https://github.com/this-fifo'>Filipe Herculano</a></p>
+      <small><i>Note: works only on a desktop browser for now, checkout <a href='https://github.com/jitsi/jitsi-meet/pull/3518'>this PR</a> for more information</i></small> */}
     </div>
   )
 }
